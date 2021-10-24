@@ -167,3 +167,9 @@ small{
 video{
     width: 100%;
 }
+
+.collapse, .collapsing{
+    border: solid 1px #CCC;
+    border-radius: 8px;
+    padding: 20px 10px;
+}
