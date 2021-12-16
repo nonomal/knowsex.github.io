@@ -1,3 +1,8 @@
+.forScreenReader{
+    /* 针对仅屏幕阅读器可见的文字 */
+    color:rgba(0, 0, 0, .0);
+    font-size: 0;
+}
 .seen{filter: blur(20px);}
 .mod{
     margin: 0 10%;
