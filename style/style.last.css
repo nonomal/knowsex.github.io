@@ -1,7 +1,7 @@
 .forScreenReader{
     /* 针对仅屏幕阅读器可见的文字 */
     color:rgba(0, 0, 0, .0);
-    font-size: 0;
+    font-size: 1px;
 }
 .seen{filter: blur(20px);}
 .mod{
@@ -74,12 +74,26 @@ small{
     margin-top: 20px;
 }
 .main h2::before{
-    font-weight: 600;
-    content: '# ';
-    color: #eb5055;
+    content:'';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-image: url('/sub/shape/sharp.svg');
+    background-size: 0.8em 0.8em;
+    vertical-align: baseline;
+    margin-right: 0.15em;
+    background-repeat: no-repeat;
 }
 .main small::before{
-    content: '▲';
+    content:'';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-image: url('/sub/shape/triangle.svg');
+    background-size: 0.8em 0.8em;
+    vertical-align: baseline;
+    margin-right: 0.15em;
+    background-repeat: no-repeat;
 }
 .main li small::before{
     content: '';
