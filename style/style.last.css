@@ -192,3 +192,11 @@ video{
     border-radius: 8px;
     padding: 20px 10px;
 }
+
+.footer-icons{
+    line-height: 40px;
+}
+
+.footer-icons a{
+    margin-right: .5em;
+}
