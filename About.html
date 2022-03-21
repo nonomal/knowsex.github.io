@@ -26,10 +26,13 @@
 	<title>关于知性 KnowSex.net - 知性，开放式性教育网站</title>
 	<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
 	<link href="//lib.sinaapp.com/js/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/style/style.last.css?20220128">
+	<link rel="stylesheet" href="/style/style.last.css?20220321">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700" rel="stylesheet"> 
 	<script src="//lib.sinaapp.com/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204367285-1"></script>
 	<script>
@@ -61,11 +64,17 @@
 	<script>
 		$(document).ready(function(){
 			//$("[id^='int_']").hide();
-			$("div.cover").click(function(){
+			$("button.transparentButton").click(function(){
 				$(".seen").css("filter", "blur(0)");
 				$("div.cover").fadeOut("fast");
 			});
-
+			$("div.cover").click(function(){
+				$("button.transparentButton").html("点击此处 / Click Here");
+				for(let i = 0; i < 3; i++){
+					$("div.needFlash").fadeOut("fast");
+					$("div.needFlash").fadeIn("fast");
+				}
+			});
 			/*
 			$("button#inctro_1").click(function(){$("div#int_1").fadeToggle()});
 			$("button#inctro_2").click(function(){$("div#int_2").fadeToggle()});
@@ -108,6 +117,9 @@
     <h2>社交媒体</h2>
     <p>在页面底部您可以找到我们的社交媒体平台。</p>
     <p>本站注册有 Twitter 、GitHub 、即刻 App 账号和微信订阅号。其中微信订阅号“知性科普”还在测试期间，尚未正式投入运营。</p>
+    <hr>
+    <p><a class="btn btn-default" href="/" target="_self" role="button">返回主页</a></p>
+    
 
 
 	<p class="bg-success" style="padding:10px;margin:5px 0;">⭐ 你的 <a href="/sub/Encourage.html" style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>

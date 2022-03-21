@@ -26,10 +26,13 @@
 	<title>来信沟通 - 知性，开放式性教育网站</title>
 	<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
 	<link href="//lib.sinaapp.com/js/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/style/style.last.css?20220128">
+	<link rel="stylesheet" href="/style/style.last.css?20220321">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700" rel="stylesheet"> 
 	<script src="//lib.sinaapp.com/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204367285-1"></script>
 	<script>
@@ -61,11 +64,17 @@
 	<script>
 		$(document).ready(function(){
 			//$("[id^='int_']").hide();
-			$("div.cover").click(function(){
+			$("button.transparentButton").click(function(){
 				$(".seen").css("filter", "blur(0)");
 				$("div.cover").fadeOut("fast");
 			});
-
+			$("div.cover").click(function(){
+				$("button.transparentButton").html("点击此处 / Click Here");
+				for(let i = 0; i < 3; i++){
+					$("div.needFlash").fadeOut("fast");
+					$("div.needFlash").fadeIn("fast");
+				}
+			});
 			/*
 			$("button#inctro_1").click(function(){$("div#int_1").fadeToggle()});
 			$("button#inctro_2").click(function(){$("div#int_2").fadeToggle()});
@@ -95,6 +104,7 @@
 </div>
 <p>如果你有自己的疑惑、焦虑希望得到我们的帮助，或者希望和我们合作，欢迎通过下面的方式来联系我们。</p>
 <p>您可以选择公开提问的内容，以帮助其他有疑虑的人。我们将对可能与您产生联系的信息抹去。</p>
+<p>请注意，回信者的观点并不代表知性 KnowSex 官方的观点。</p>
 <h2>电子邮件</h2>
     <p>
         <a href="mailto:knowsex@outlook.com" style="text-decoration: underline; font-weight: 700; font-size: 1.2em; color:#5dbd90;">

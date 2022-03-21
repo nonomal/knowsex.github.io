@@ -26,10 +26,13 @@
 	<title>避孕与预防性传播疾病 - 知性，开放式性教育网站</title>
 	<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
 	<link href="//lib.sinaapp.com/js/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/style/style.last.css?20220128">
+	<link rel="stylesheet" href="/style/style.last.css?20220321">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700" rel="stylesheet"> 
 	<script src="//lib.sinaapp.com/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204367285-1"></script>
 	<script>
@@ -61,11 +64,17 @@
 	<script>
 		$(document).ready(function(){
 			//$("[id^='int_']").hide();
-			$("div.cover").click(function(){
+			$("button.transparentButton").click(function(){
 				$(".seen").css("filter", "blur(0)");
 				$("div.cover").fadeOut("fast");
 			});
-
+			$("div.cover").click(function(){
+				$("button.transparentButton").html("点击此处 / Click Here");
+				for(let i = 0; i < 3; i++){
+					$("div.needFlash").fadeOut("fast");
+					$("div.needFlash").fadeIn("fast");
+				}
+			});
 			/*
 			$("button#inctro_1").click(function(){$("div#int_1").fadeToggle()});
 			$("button#inctro_2").click(function(){$("div#int_2").fadeToggle()});
@@ -103,6 +112,7 @@
         <p>文中提到的避孕用品可在药店、超市或是便利店买到，也可以选择网购。</p>
         <p>购买避孕用品不是不光彩的事情，不必担心店员的眼光和说辞，大可以大大方方地购买，而不必躲躲藏藏。购买避孕用品是对另一方负责，也是对自己负责。</p>
         <p>药品可能有副作用，请在使用前多加小心，如激素类避孕措施可能带来血栓等影响。虽然所有的避孕措施皆有一些潜在的副作用，但这些风险比怀孕带来的风险要低。这些副作用会在药品说明书中注明。</p>
+        <p>无论您决定采用何种避孕措施，希望您多多了解该方法可能带来的负面影响，以更好更安全地避孕。</p>
         <p>在文末，会提供一份避孕措施表格以供参考。</p>
         <div class="tip">
             <p><strong style="color:brown">医学声明：</strong></p>
@@ -187,6 +197,14 @@
         <img src="img/contraceptive/10.jpg" class="img-thumbnail thumb" alt="图 10， 一种宫内节育器"><br>
         <small>图 10 一种宫内节育器</small><br>
         <p>宫内节育器（IUD）是中国已婚女性主要的避孕措施，其中以<strong>含铜宫内节育器</strong>应用最为广泛，含较强抗生育能力的铜离子。此外，还有含有激素或药物的<strong>含药宫内节育器</strong>。宫内节育器需要去医院进行安放，一般可放置5~7年。</p>
+        
+        <h3>绝育</h3>
+        <p>绝育是一种永久性的避孕措施，分为<strong>男性绝育</strong>和<strong>女性绝育</strong>。绝育不影响性激素的分泌。</p>
+        <p>男性绝育大多数采用<strong>输精管结扎术</strong>，女性绝育大多数采用<strong>输卵管结扎术</strong>。</p>
+        <p>输精管结扎术通过将精子由睾丸到阴茎的通道阻断来达到避孕目的。该手术不会影响勃起和射精，射出的精液中不含精子。精子仍可继续产出，只是无法排出，被身体吸收。</p>
+        <p>输卵管结扎术阻断精子和卵子的相遇来达到避孕目的。该手术不会影响月经周期。</p>
+        <p>绝育手术适合没有生育要求的夫妇进行。绝育手术为永久性的手段，复通不易，应当慎重考虑。应与医生进行充分沟通，了解可能的并发症和缺点。值得注意的是，近些年学术界就绝育所致的并发症讨论不一，再次提醒您应充分了解这些情况。</p>
+        
         <h3>其他避孕方法</h3>
         <p>除上述介绍方法以外，还有性交中断法（体外射精法）、安全期避孕等方法进行避孕，有较高的怀孕风险，不宜推广，<strong>不建议使用</strong>。</p>
         <h4>性交中断法</h4>

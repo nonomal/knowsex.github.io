@@ -17,6 +17,10 @@
 .block h2{
     color: #5dbd90;
 }
+.main h2{
+    margin: 2em auto 1em;
+    font-weight: bold;
+}
 .title{
     color: #5dbd90;
     padding: 20px 30px 20px;
@@ -101,6 +105,13 @@ small{
 .main h3{
     border-left: 8px solid #eb5055;
     padding: 4px 10px;
+    font-weight: bold;
+}
+.main h4{
+    border-left: 2px solid #eb5055;
+    margin-top: 1em;
+    padding: .3em .5em;
+    font-weight: bold;
 }
 .header-thumb{
     position: relative;
@@ -199,4 +210,27 @@ video{
 
 .footer-icons a{
     margin-right: .5em;
+}
+
+.transparentButton {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: .5em;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .7em;
+    margin: 1em auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.transparentButton:hover {
+    background-color: white;
+    color: #777;
+}
+
+.show {
+    padding: 1em 0;
 }
