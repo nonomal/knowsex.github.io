@@ -3,7 +3,10 @@
     color:rgba(0, 0, 0, .0);
     font-size: 1px;
 }
-.seen{filter: blur(20px);}
+.seen{
+    filter: blur(20px);
+    transition: .5s;
+}
 .mod{
     margin: 0 10%;
     text-align: center;
@@ -177,6 +180,7 @@ small{
     height: 100%;
     /* filter: blur(300px); */
     background-color: rgba(0, 0, 0, .3);
+    transition: .5s;
 }
 .warn{
     max-width: 700px;

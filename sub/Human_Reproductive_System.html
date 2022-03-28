@@ -17,6 +17,7 @@
 
 	<meta name="twitter:site" content="@knowsex_net" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
 
 	<link rel="apple-touch-icon-precomposed" href="/style/logo_57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/style/logo_114.png" />
@@ -24,15 +25,10 @@
 
 	<base target="_blank">
 	<title>人类生殖系统 - 知性，开放式性教育网站</title>
-	<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+	<link rel="stylesheet" href="/style/style.last.css?20220328">
 	<link href="//lib.sinaapp.com/js/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/style/style.last.css?20220321">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700" rel="stylesheet"> 
 	<script src="//lib.sinaapp.com/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
-	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700" rel="stylesheet"> 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204367285-1"></script>
 	<script>
@@ -61,37 +57,15 @@
 			</a>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function(){
-			//$("[id^='int_']").hide();
-			$("button.transparentButton").click(function(){
-				$(".seen").css("filter", "blur(0)");
-				$("div.cover").fadeOut("fast");
-			});
-			$("div.cover").click(function(){
-				$("button.transparentButton").html("点击此处 / Click Here");
-				for(let i = 0; i < 3; i++){
-					$("div.needFlash").fadeOut("fast");
-					$("div.needFlash").fadeIn("fast");
-				}
-			});
-			/*
-			$("button#inctro_1").click(function(){$("div#int_1").fadeToggle()});
-			$("button#inctro_2").click(function(){$("div#int_2").fadeToggle()});
-			$("button#inctro_3").click(function(){$("div#int_3").fadeToggle()});
-			$("button#inctro_4").click(function(){$("div#int_4").fadeToggle()});
-			$("button#inctro_5").click(function(){$("div#int_5").fadeToggle()});
-			*/
-		})
-	</script>
-	
 
+	
+		
 		<div class="cover">
 			<div class="warn">
 				<p class="forScreenReader">如果您正在使用屏幕阅读器，请注意：本页面含有裸露的性器官图片。本页已使用一层模糊处理，您可以不必理会接下来数句提示，继续浏览。</p>
 				<p aria-hidden="true">本页面含有裸露的性器官图片，或不适宜在公众场合展示。轻触或点击按钮以继续。</p>
 				<p aria-hidden="true">Contains nudity, click or touch the button to continue.</p>
-				<div class="needFlash">
+				<div class="needFlash"> 
 					<button class="transparentButton" aria-hidden="true">展示 / Display</button>
 				</div>
 			</div>
@@ -410,6 +384,19 @@
 
 		</div>
 		</div>
+		<script>
+			//transparentButton
+			let transparentButton = document.querySelector('.transparentButton');
+			let cover = document.querySelector('.cover');
+			let seen = document.querySelector('.seen');
+			transparentButton.addEventListener("click", function( event ) {
+				seen.style.filter = "blur(0)";
+				cover.parentElement.removeChild(cover);
+			}, false);
+			cover.addEventListener("click", function( event ) {
+				transparentButton.innerHTML = "点击此处 / Here";
+			})
+		</script>
 
 	
 	<hr>
@@ -478,5 +465,8 @@
 		</div>
 	</div>
 	<script src="/script/log.js"></script>
+	<script>
+		
+	</script>
 </body>
 </html>
