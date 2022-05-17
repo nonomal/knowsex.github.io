@@ -71,6 +71,17 @@ small{
     color:#A4A2A2;
     text-align: center;
 }
+.main small::before{
+    content:'';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-image: url('/sub/shape/triangle.svg');
+    background-size: 0.8em 0.8em;
+    vertical-align: baseline;
+    margin-right: 0.15em;
+    background-repeat: no-repeat;
+}
 .img-box{
     margin-bottom: 20px;
 }
@@ -91,17 +102,7 @@ small{
     margin-right: 0.15em;
     background-repeat: no-repeat;
 }
-.main small::before{
-    content:'';
-    display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
-    background-image: url('/sub/shape/triangle.svg');
-    background-size: 0.8em 0.8em;
-    vertical-align: baseline;
-    margin-right: 0.15em;
-    background-repeat: no-repeat;
-}
+
 .main li small::before{
     content: '';
 }
@@ -237,4 +238,15 @@ video{
 
 .show {
     padding: 1em 0;
+}
+
+/* .img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.key {
+    font-weight: bold;
 }
