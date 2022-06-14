@@ -265,20 +265,20 @@ small {
 }
 
 .xef {
-    background-color: #548235;
+    background-color: #548235 !important;
     color: white;
 }
 
 .ef {
-    background-color: #c6e0b4;
+    background-color: #c6e0b4 !important;
 }
 
 .wa {
-    background-color: #fff2cc;
+    background-color: #fff2cc !important;
 }
 
 .da {
-    background-color: #f4b084;
+    background-color: #f4b084 !important;
 }
 
 video {
@@ -360,4 +360,17 @@ blockquote footer {
     font-size: 80%;
     line-height: 1.42857143;
     color: #777;
+}
+
+.reference-list {
+    font-size: .9em;
+    overflow-x: auto;
+}
+
+.notice {
+    padding: 10px;
+    margin: 5px 0;
+}
+.notice svg {
+    height: 1.3em;
 }
