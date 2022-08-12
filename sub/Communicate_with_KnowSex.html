@@ -114,18 +114,21 @@
     <p>该列表定期擦除，更新稍有延迟。</p>
     <p style="color: #A4A2A2">⇆ 表格若未完全显示，可左右滑动。</p>
 
-    <div style="overflow: auto;" id="exception-table"><p>（暂无异常情况）</p></div>
+    <div style="overflow: auto;" id="exception-table"><p>（读取列表失败）</p></div>
 </div>
 <script>
         //获取本文件夹 Exception.json 文件
         //获得时间戳
         let timestamp = new Date().getTime();
         $.getJSON("exception.json?"+timestamp, function(data) {
+
             let ExceptionList = data;
             let ExceptionListLength = ExceptionList.length;
             let ExceptionListHTML = ``;
-            //如果是空的
-            if (ExceptionListLength == 0) {
+
+            if(data.status == "error"){
+                ExceptionListHTML = `<p>（读取列表失败）</p>`;
+            } else if (ExceptionListLength == 0) {
                 ExceptionListHTML = `<p>（暂无异常情况）</p>`;
             } else {
                 for (let i = 0; i < ExceptionListLength; i++) {
