@@ -104,13 +104,59 @@
      <h2 class="mt-4 mb-4">在线表单（试行）</h2>
     
     <p>您也可以填写在线表单进行提问，可通过下方按钮或识别二维码进行填写。</p>
-    
+    <p>如果太久没有收到回信，请回访本页面，查看下方<a href="#exception" target="_self">回信状态异常列表</a>。</p>
     <p><a class="btn btn-outline-secondary" href="https://f.kdocs.cn/w/SYut9a03/"  target="_self" role="button">填写表单</a></p>
     <div class="img-box">
         <img src="img/kdocs.jpg?20220806" alt="表单二维码" class="img-thumbnail" style="width:100%;max-width:500px;margin:auto">
-    </div>    
-</div>
+    </div>    	
+    <h2 class="mt-4 mb-4" id="exception">回信状态异常列表</h2>
+	<p>下面是近期一些知性 KnowSex 复信组无法与来信者取得联系的情况之列表。如果您的来信位于列表中，且需要继续联系知性 KnowSex ，请根据情况与复信组取得联系，也可重新发送邮件或提交表单。</p>
+    <p>该列表定期擦除，更新稍有延迟。</p>
+    <p style="color: #A4A2A2">⇆ 表格若未完全显示，可左右滑动。</p>
 
+    <div style="overflow: auto;" id="exception-table"><p>（暂无异常情况）</p></div>
+</div>
+<script>
+        //获取本文件夹 Exception.json 文件
+        //获得时间戳
+        let timestamp = new Date().getTime();
+        $.getJSON("exception.json?"+timestamp, function(data) {
+            let ExceptionList = data;
+            let ExceptionListLength = ExceptionList.length;
+            let ExceptionListHTML = ``;
+            //如果是空的
+            if (ExceptionListLength == 0) {
+                ExceptionListHTML = `<p>（暂无异常情况）</p>`;
+            } else {
+                for (let i = 0; i < ExceptionListLength; i++) {
+                    ExceptionListHTML += `
+                    <tr>
+                        <td>${ExceptionList[i].time}</td>
+                        <td>${ExceptionList[i].way}</td>
+                        <td>${ExceptionList[i].value}</td>
+                        <td>${ExceptionList[i].note}</td>
+                    </tr>
+                    `;
+                }	
+                ExceptionListHTML = `
+                <table class="table table-hover" style=" width: 800px">
+                    <thead>
+                        <tr>
+                            <th>时间（UTC+8）</th>
+                            <th>复信方式</th>
+                            <th>复信地址/账号</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${ExceptionListHTML}
+                    </tbody>
+                </table>`;
+            }
+            document.getElementById("exception-table").innerHTML = ExceptionListHTML;
+
+        });
+</script>
 <div class="hr"></div>
 <p><a class="btn btn-outline-secondary" href="/" target="_self" role="button">返回主页</a></p>
 
