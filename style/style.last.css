@@ -197,6 +197,20 @@ small {
     background-image: url('../sub/extended-reading/img/contraceptive.jpg');
 }
 
+.communicate {
+    background-image: url('../sub/img/talk-bg.jpg');
+}
+.donate-bg {
+    background-image: url('../sub/img/donateCover.jpg')
+}
+.about-bg {
+    background-image: url('/sub/img/aboutCover.jpg')
+}
+.license-bg {
+    background-image: url('/license-cover.jpg')
+}
+
+
 .header-cover {
     position: relative;
     width: 100%;
