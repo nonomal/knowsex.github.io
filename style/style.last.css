@@ -35,6 +35,8 @@
     padding: 20px 30px 20px;
     margin: 0;
     font-size: 1.5em;
+    line-height: 1.2;
+    display: block;
 }
 
 .topbar {
@@ -103,6 +105,7 @@ small {
 
 .img-box {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .thumb {
@@ -387,4 +390,18 @@ blockquote footer {
 }
 .notice svg {
     height: 1.3em;
+}
+
+.show-after-click{
+    filter: blur(40px);
+    transition: .5s;
+}
+
+.text-hover-img {
+    position: absolute;
+    text-align: center;
+    width: 96%;
+    top: 35%;
+    color: #fff;
+    z-index: 1;
 }
