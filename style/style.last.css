@@ -197,7 +197,7 @@ small {
 }
 
 .contraceptive {
-    background-image: url('../sub/extended-reading/img/contraceptive.jpg');
+    background-image: url('/sub/img/contraceptive.jpg');
 }
 
 .communicate {
@@ -404,4 +404,14 @@ blockquote footer {
     top: 35%;
     color: #fff;
     z-index: 1;
+}
+
+.tip-bar {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.tip-bar svg {
+    height: 1em;
+    display: inline;
 }
