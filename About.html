@@ -60,7 +60,9 @@
     color: #777;
 }
 .quote {
-    text-align: center; padding: 1.5em
+    text-align: center; 
+    padding: 1.5em;
+    position: relative;
 }
 .quote p {
     font-size: 1.5em; line-height: 45px; color: #575757;
@@ -70,6 +72,27 @@
     font-size: 80%;
     line-height: 1.42857143;
     color: #777;
+}
+.quote p::before {
+    color: #ddd;
+    content: "\201C";
+    font-size: 4em;
+    position: absolute;
+    left: -.6em;
+    top: .4em;
+    line-height: .1em;
+    z-index: -1;
+}
+
+.quote p::after {
+    color: #ddd;
+    content: "\201D";
+    font-size: 4em;
+    position: absolute;
+    right: -.6em;
+    bottom: .2em;
+    line-height: .1em;
+    z-index: -1;
 }
 </style>
 </head>
@@ -109,21 +132,21 @@
         <p>
             知性 KnowSex 致力于提供直观、明了的生理知识，解答群众困惑，并希望藉此减少一些社会问题的发生。
         </p>
-        <span class="source">知性 KnowSex 站长&emsp;Linn</p>
+        <span class="source">知性 KnowSex 站长&emsp;Linn</span>
     </div>
     <div class="hr"></div>
     <p>知性 KnowSex 是一个性教育网站，内容适合初中及以上阶段的人群阅读。</p>
     <p>知性 KnowSex 团队独立运营本站，运营资金来源于读者的支持、站长自费和支付宝赚钱红包的推广。</p>
     <p>本站正式名称为“知性 KnowSex”，亦可作“知性”“KnowSex”“知性 KnowSex.net”“KnowSex.net”。</p>
     
-     <h2 class="mt-4 mb-4">相关人员</h2>
+    <h2 class="mt-4 mb-4">相关人员</h2>
     <p>本站创始人、站长是 <b>Linn</b> 。</p>
     <p>目前，<b>Linn</b> 负责策划、内容撰写、页面开发、服务器维护和社交媒体运营。</p>
     <p>本站内容《避孕与预防性传播疾病》一节由<a href="https://www.zhihu.com/people/woden-5"><b>戟空悦</b></a>进行了指导和建议。</p>
-    <p><b>张子君等人</b>负责读者来信工作。</p>
+    <p><b>张子君</b>、<b>神奇的红毛丹</b>等人负责读者来信工作。</p>
     <p><b>X.Ran Lin</b>、<b>沈逸林</b>为本站内容提供了一部分照片。</p>
     
-     <h2 class="mt-4 mb-4">社交媒体</h2>
+    <h2 class="mt-4 mb-4">社交媒体</h2>
     <p>在页面底部您可以找到我们的社交媒体平台。</p>
     <p>本站注册有 Twitter 、GitHub 、即刻 App 账号和微信订阅号。其中微信订阅号“知性科普”还在测试期间，尚未正式投入运营。</p>
     <div class="hr"></div>
