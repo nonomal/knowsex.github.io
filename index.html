@@ -84,7 +84,8 @@
 	</div>
 			    <div class="main">
         <p class="bg-light tip-bar" aria-hidden="true">⭐ 你的 <a href="/sub/Encourage.html" style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>
-        <p class="bg-light tip-bar">🖋️ 网站上次修缮日期 2022-09-01</p>
+        <p class="bg-light tip-bar">🖋️ 网站上次修缮日期 2022-09-21</p>
+        <div class="browser_tip"></div>
         <br>
 
         <div class="header-thumb">
@@ -168,6 +169,26 @@
 			style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>
 	  
 	    </div>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/UAParser.js/1.0.2/ua-parser.min.js" type="application/javascript"></script>
+    <script>
+        var parser = new UAParser();
+        let browser = parser.getResult().browser.name;
+        let os = parser.getResult().os.name;
+        const browser_list = [
+            "2345Explorer", "360 Browser",
+            "Baidu", "QQ", "QQBrowser", "QQBrowserLite", "Quark",
+            "UCBrowser", "WeChat", "baidu", "MIUI Browser",
+            "baiduboxapp", "WeChat(Win) Desktop", "QQBrowserLite", "BIDUBrowser", "LBBROWSER", "MetaSr" /*SouGouBrowser*/
+        ];
+        //Maxthon?
+        console.log(browser)
+        if(browser_list.includes(browser)) {
+            document.querySelector(".browser_tip").innerHTML = `
+            <p class="text-light tip-bar" style="background-color:#ff6363">
+            😥 您使用的浏览器似乎会阻止您完整浏览网站内容。
+            </p>`;
+        }
+    </script>
 	<div class="hr"></div>
 	<div class="main row">
 		<p style="color:grey;margin: 0;">本网站所提供的信息仅供教育科普用途。这些信息并非旨在提供专业意见，也不能代替有医疗资质者之意见。如需就诊，请咨询正规医疗机构，以免延误病情。</p>
