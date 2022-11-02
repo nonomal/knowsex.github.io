@@ -53,7 +53,8 @@
 			pangu.autoSpacingPage();
 		  });
 	</script> -->
-	<style></style>
+	<style>:not(:defined) > *{display:none}strong{font-weight:700}model-viewer{width:100%;height:60vh;background-color:#fff;border:1px solid #dee2e6;border-radius:.25rem}.progress-bar{display:block;width:33%;height:10%;max-height:2%;position:absolute;left:50%;top:50%;transform:translate3d(-50%,-50%,0);border-radius:25px;box-shadow:0px 3px 10px 3px rgba(0,0,0,0.5),0px 0px 5px 1px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.9);background-color:rgba(0,0,0,0.5)}.progress-bar.hide{visibility:hidden;transition:visibility 0.3s}.update-bar{background-color:rgba(255,255,255,0.9);width:0%;height:100%;border-radius:25px;float:left;transition:width 0.3s}#ar-button{background-image:url(models/ar_icon.png);background-repeat:no-repeat;background-size:20px 20px;background-position:12px 50%;background-color:#fff;position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;bottom:16px;padding:0px 16px 0px 40px;font-family:Roboto Regular,Helvetica Neue,sans-serif;font-size:14px;color:#4285f4;height:36px;line-height:36px;border-radius:18px;border:1px solid #DADCE0}#ar-button:active{background-color:#E8EAED}#ar-button:focus{outline:none}#ar-button:focus-visible{outline:1px solid #4285f4}@keyframes circle{from{transform:translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg)}to{transform:translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg)}}@keyframes elongate{from{transform:translateX(100px)}to{transform:translateX(-100px)}}model-viewer > #ar-prompt{position:absolute;left:50%;bottom:60px;animation:elongate 2s infinite ease-in-out alternate;display:none}model-viewer[ar-status="session-started"] > #ar-prompt{display:block}model-viewer > #ar-prompt > img{animation:circle 4s linear infinite}svg.icon{margin-top:-.25em}.model-title{font-weight:700}.model-text{color:grey;font-size:.9em;display:block;margin:.5em 0}
+</style>
 </head>
 
 <body>
@@ -94,7 +95,10 @@
 	  </div>
 	  <div style="box-shadow: 5px 0 0 rgba(0, 0, 0, 0.5);"></div>
 	  <div class="main">
-			<div style="height: 50vh;text-align: center;font-size: 1.1em;font-weight: 700; display: flex;align-items: center;justify-content: center;color: #555;">
+	<!-- For Model Viewer.-->
+<script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.min.js" defer></script>
+
+		<div style="height: 50vh;text-align: center;font-size: 1.1em;font-weight: 700; display: flex;align-items: center;justify-content: center;color: #555;">
 			<div>
 				<p style="font-size: 1.5em;color: #f28484;">敬请注意</p>
 				<p class="forScreenReader">如果您正在使用屏幕阅读器，请注意：本页面含有裸露的性器官图片。本页已使用一层模糊处理，您可以不必理会接下来数句提示，继续浏览。</p>
@@ -103,7 +107,7 @@
 			</div>
 		</div>
 		<p><strong>生殖系统</strong>是生物体内的和生殖密切相关的器官（生殖器）成分的总称。<sup id="cite_ref-生殖系统" class="reference"><a href="#cite_note-生殖系统" target="_self">[1]</a></sup></p>
-		 <h2 class="mt-4 mb-4">女性生殖系统</h2>
+		 <h2 class="mt-4 mb-4" id="女性生殖系统">女性生殖系统</h2>
 		<div class="row show">
 			<div class="col-md-6 img-box">
 				<img src="img/111.jpg" class="img-thumbnail thumb" alt="图 1，张开的女性阴部（外生殖器）">
@@ -115,10 +119,28 @@
 			</div>
 		</div>
 
-
-		<h3 class="mt-4 mb-3">生殖器简述</h3>
+		<span class="model-title">
+			<svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 44V14L14 4H44V34L34 44H4Z" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 14V44" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4L14 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 14L34 14" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 4L34 14" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 44L14 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34L44 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			模型展示：女性形态外阴&nbsp;<span class="badge bg-secondary">测试功能</span>
+		</span>
+		<span class="model-text">您可操控其旋转、缩放或使用 AR 在现实中查看（如设备支持）。<b>若要向下滑动查看文章，请在模型框线以外区域向下滑动以翻动页面。</b></span>
+		<model-viewer loading="lazy" src="models/vulva.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="models/vulva_poster.png" shadow-intensity="1" environment-image="legacy" exposure="0.61" camera-orbit="-125.6deg 64.98deg auto">
+			<div class="progress-bar hide" slot="progress-bar">
+				<div class="update-bar"></div>
+			</div>
+			<button slot="ar-button" id="ar-button">
+				在现实中查看
+			</button>
+			<div id="ar-prompt">
+				<img src="models/ar_hand_prompt.png">
+			</div>
+		</model-viewer>  
+		<small>模型来自 <a href="https://hiddenbeauty.ch/">Hidden Beauty</a> ，编号为 <a href="https://hiddenbeauty.ch/model/426060-VSNN-1">426060-VSNN-1</a> ，其以 <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC 0</a> 协议发布。知性 KnowSex 对模型有略作修改。</small>
+		
+		<h3 class="mt-4 mb-3" id="女性生殖器简述">生殖器简述</h3>
 		<p>
 			如图 1 展示为用手张开的女性阴部，为女性生殖系统的重要组成部分。</p>
+
 		<p>
 			女性的生殖系统分为外生殖器（即上图所示的外阴）和内生殖器。<sup id="cite_ref-女性生殖系统概述" class="reference"><a href="#cite_note-女性生殖系统概述" target="_self">[5]</a></sup><sup id="cite_ref-女性生殖系统" class="reference"><a href="#cite_note-女性生殖系统" target="_self">[14]</a></sup></p>
 		<p>
@@ -243,7 +265,7 @@
 		</p>
 		<p>卫生棉条一般附有说明书。卫生棉条放置形式各异，使用应按照说明书步骤进行。有关中毒性休克综合征（TSS）的说明在一些说明书上也可找到。</p>
 
-		 <h2 class="mt-4 mb-4">男性生殖系统</h2>
+		 <h2 class="mt-4 mb-4" id="男性生殖系统">男性生殖系统</h2>
 		<div class="row show">
 			<div class="col-md-6">
 				<img src="img/121.jpg" class="img-thumbnail thumb" alt="图 8， 亚洲男性外生殖器（疲软状态，包皮覆盖）">
@@ -253,7 +275,24 @@
 				<img src="img/122.jpg" class="img-thumbnail thumb" alt="图 9，阴茎（系带面，包皮翻开）">
 				<br><small>图 9 阴茎（系带面，包皮翻开）</small>
 			</div>
-		</div>
+		</div><br>
+		<span class="model-title">
+			<svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 44V14L14 4H44V34L34 44H4Z" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 14V44" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4L14 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 14L34 14" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 4L34 14" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 44L14 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34L44 34" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			模型展示：阴茎与阴囊&nbsp;<span class="badge bg-secondary">测试功能</span>
+		</span>
+		<span class="model-text">您可操控其旋转、缩放或使用 AR 在现实中查看（如设备支持）。<b>若要向下滑动查看文章，请在模型框线以外区域向下滑动以翻动页面。</b></span>
+		<model-viewer loading="lazy" src="models/penis.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="models/penis_poster.png" shadow-intensity="1" environment-image="legacy" exposure="0.57" camera-orbit="-48.9deg 83.38deg auto">
+			<div class="progress-bar hide" slot="progress-bar">
+				<div class="update-bar"></div>
+			</div>
+			<button slot="ar-button" id="ar-button">
+				在现实中查看
+			</button>
+			<div id="ar-prompt">
+				<img src="models/ar_hand_prompt.png">
+			</div>
+		</model-viewer>  
+		<small>模型由 <a href="https://sketchfab.com/rossthren">rossthren</a> 制作，于 <a href="https://sketchfab.com/3d-models/flaccid-penis-37dd96fb488548789bffb54dc152e6f9">Sketchfab</a> 以 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> 协议发布，知性 KnowSex 对模型有略作修改。</small>
 		<h3 class="mt-4 mb-3">生殖器简述</h3>
 		<p>如图为男性<strong>阴茎</strong>。阴茎是男性<strong>排尿</strong>和<strong>交配</strong>的器官。</p>
 		<p>男性生殖系统可以分为外生殖系统以及内生殖系统。</p>
@@ -328,10 +367,10 @@
 		<p>本节正文内容已结束。</p>
 		<p><a class="btn btn-outline-secondary" href="Sexual_Activity.html" target="_self" role="button">性行为&nbsp;➡</a></p>
 
-			
+				<div id="main-end"></div>
 	<p class="bg-light" style="padding:10px;margin:5px 0;">⭐ 你的 <a href="/sub/Encourage.html"
 			style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>
-	  
+	
 			 <h2 class="mt-4 mb-4 reference">参考资料</h2>
 		<ol class="reference-list">
 			<li id="cite_note-生殖系统"><span class="mw-cite-backlink"><b><a href="#cite_ref-生殖系统" aria-label="跳转" title="跳转" target="_self">^</a></b></span><span class="reference-text">维基百科编者. 生殖系统[G/OL]. 维基百科, 2022(20220303)[2022-03-03].&nbsp;<a href="https://zh.wikipedia.org/w/index.php?title=%E7%94%9F%E6%AE%96%E7%B3%BB%E7%BB%9F&oldid=70441041">https://zh.wikipedia.org/w/index.php?title=%E7%94%9F%E6%AE%96%E7%B3%BB%E7%BB%9F&oldid=70441041</a>.</span></li>
@@ -523,7 +562,10 @@
 		</p>
 		<p>The copyright of the book owned by Oxford University Press, Inc. and the copyright notice is as follows.</p>
 		<blockquote>Copyright © 2000 by Oxford University Press, Inc.</blockquote>
-
+		<h3 class="mt-4 mb-3">关于模型展示</h3>
+		<p>“女性形态外阴”模型来自 <a href="https://hiddenbeauty.ch/">Hidden Beauty</a> ，编号为 <a href="https://hiddenbeauty.ch/model/426060-VSNN-1">426060-VSNN-1</a> ，其以 <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC 0</a> 协议发布。知性 KnowSex 对模型有略作修改。</p>
+		<p>“阴茎与阴囊”模型由 <a href="https://sketchfab.com/rossthren">rossthren</a> 制作，于 <a href="https://sketchfab.com/3d-models/flaccid-penis-37dd96fb488548789bffb54dc152e6f9">Sketchfab</a> 以 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> 协议发布，知性 KnowSex 对模型有略作修改。</p>
+		<p>模型展示功能基于 <a href="https://modelviewer.dev/"><code>&lt;model-viewer&gt;</code></a> ，其许可证使用 <a href="https://github.com/google/model-viewer/blob/master/LICENSE">Apache License 2.0</a> 。</p>
 	</div>
 </div>
 
@@ -535,6 +577,10 @@
 		});
 	})
 </script>
+
+<!-- Model viewer -->
+<script src="models/script.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.0.2/dist/model-viewer.min.js"></script>
 
 <!-- <script>
 			//transparentButton
