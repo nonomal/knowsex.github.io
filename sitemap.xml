@@ -1,51 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
- <loc>https://knowsex.net/</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
- <loc>https://knowsex.net/sub/Human_Reproductive_System.html</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
+  <loc>https://knowsex.net/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/human-reproductive-system/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/sexual-activity/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/sexual-orientation/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/contraception/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/std/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/general/copyright/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/general/encourage/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/general/fund/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/general/communicate/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/general/about/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/sitemap/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/other-media/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/std/syphilis/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/std/gonorrhea/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://knowsex.net/main/other-media/</loc>
+  <lastmod>2023-01-26T14:31:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
-<url>
- <loc>https://knowsex.net/sub/Sexual_Activity.html</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
-
-<url>
- <loc>https://knowsex.net/sub/Sexual_Orientation.html</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
-
-<url>
- <loc>https://knowsex.net/sub/Communicate_with_KnowSex.html</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
-
-<url>
- <loc>https://knowsex.net/sub/extended-reading</loc>
- <priority>0.5</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
-
-<url>
- <loc>https://knowsex.net/sub/extended-reading/contraception-and-prevention-of-STD.html</loc>
- <priority>0.4</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
-
-<url>
- <loc>https://knowsex.net/general/copyright</loc>
- <priority>0.2</priority>
- <lastmod>2021-08-12</lastmod>
-</url>
 
 </urlset>
