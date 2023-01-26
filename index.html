@@ -57,10 +57,10 @@
 	</script> -->
 	<style>
 		.talk-bg {
-    background-image: url('./sub/img/talk-bg.jpg');
+    background-image: url('./general/communicate/img/talk-bg.jpg');
 }
 .std-bg {
-    background-image: url('./sub/STD/source/dominoes.jpg');
+    background-image: url('./main/std/dominoes.jpg');
 }
 	</style>
 </head>
@@ -75,24 +75,74 @@
 ██║  ██╗██║ ╚████║╚██████╔╝╚███╔███╔╝███████║███████╗██╔╝ ██╗██╗██║ ╚████║███████╗   ██║   
 ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   
 -->
-	<div class="topbar">
+	<!-- <div class="topbar">
 		<div class="left">
-			<a href="/" target="_self">
-				<h1 class="title">
-					<img loading="lazy" src="/favicon.ico" alt="知性标志" aria-hidden="true"
-						style="width:36px;height:36px;margin-right:5px;">知性&nbsp;<small>KnowSex</small>
-				</h1>
-			</a>
+			
+		  
 		</div>
-	</div>
+	</div> -->
+
+	<nav class="navbar navbar-expand-lg topbar">
+		<div class="container-fluid">
+		  <a href="/" target="_self"> 			<h1 class="title">
+				<img loading="lazy" src="/favicon.ico" alt="知性标志" aria-hidden="true"
+					style="width:36px;height:36px;margin-right:5px;">知性&nbsp;<small>KnowSex</small>
+			</h1>
+		</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="border:none; padding: 0;">
+			<span class="me-auto"></span>
+						<div class="d-flex">
+			<ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+				<li class="nav-item">
+				  <a class="nav-link" href="/">主页</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					正文
+				  </a>
+				  <ul class="dropdown-menu text-center">
+					<li><a class="dropdown-item" href="/main/human-reproductive-system">人类生殖系统</a></li>
+					<li><a class="dropdown-item" href="/main/sexual-activity">性行为</a></li>
+					<li><a class="dropdown-item" href="/main/sexual-orientation">性取向</a></li>
+					<li><a class="dropdown-item" href="/main/contraception">避孕</a></li>
+					<li><a class="dropdown-item" href="/main/std">性传播疾病</a></li>
+					<!-- <li><hr class="dropdown-divider"></li> -->
+				  </ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  站务
+					</a>
+					<ul class="dropdown-menu text-center">
+					  <li><a class="dropdown-item" href="/general/copyright">版权许可</a></li>
+					  <li><a class="dropdown-item" href="/general/encourage">支持知性</a></li>
+					  <li><a class="dropdown-item" href="/general/fund">资金详单</a></li>
+					  <li><a class="dropdown-item" href="/general/communicate">来信沟通</a></li>
+					  <li><a class="dropdown-item" href="/general/about">关于知性</a></li>
+					  <!-- <li><hr class="dropdown-divider"></li> -->
+					</ul>
+				  </li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/sitemap">站点地图</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+
 			    <div class="main">
         <p class="bg-light tip-bar" aria-hidden="true">⭐ 你的 <a href="/sub/Encourage.html" style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>
-        <p class="bg-light tip-bar">🖋️ 网站上次修缮日期 2023-01-01</p>
+        <p class="bg-light tip-bar">🖋️ 网站上次修缮日期 2023-01-26</p>
+        <div class="bg-light tip-bar" id="domain-notice"></div>
         <div class="browser_tip"></div>
         <br>
 
         <div class="header-thumb">
-  <a href="sub/Human_Reproductive_System.html">
+  <a href="main/human-reproductive-system">
     <div class="header-img no1"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -103,7 +153,7 @@
   </a>
 </div>
         <div class="header-thumb">
-  <a href="sub/Sexual_Activity.html">
+  <a href="main/sexual-activity">
     <div class="header-img no2"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -114,7 +164,7 @@
   </a>
 </div>
         <div class="header-thumb">
-  <a href="sub/Sexual_Orientation.html">
+  <a href="main/sexual-orientation">
     <div class="header-img no3"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -125,7 +175,7 @@
   </a>
 </div>
         <div class="header-thumb">
-  <a href="sub/Contraception.html">
+  <a href="main/contraception">
     <div class="header-img contraceptive"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -136,7 +186,7 @@
   </a>
 </div>
         <div class="header-thumb">
-  <a href="sub/STD">
+  <a href="main/std">
     <div class="header-img std-bg"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -147,7 +197,7 @@
   </a>
 </div>
         <div class="header-thumb">
-  <a href="sub/Communicate_with_KnowSex.html">
+  <a href="general/communicate">
     <div class="header-img talk-bg"></div>
     <div class="header-cover">
       <div class="header-title">
@@ -168,7 +218,7 @@
             <footer>联合国教科文组织&emsp;联合国人口基金</footer>
         </blockquote>
 									<div id="main-end"></div>
-				<p class="bg-light" style="padding:10px;margin:5px 0;">⭐ 你的 <a href="/sub/Encourage.html"
+				<p class="bg-light" style="padding:10px;margin:5px 0;">⭐ 你的 <a href="/general/encourage"
 						style="text-decoration:underline">支持</a> 可以鼓励知性的维护与运营。</p>
 				<div class="article-info">
 					    </div>
@@ -185,9 +235,9 @@
 						望藉此减少一些社会问题的发生。
 					</p>
 					<ul class="list-inline">
-						<li class="list-inline-item"><a href="/LICENSE.html">版权许可</a></li>
-						<li class="list-inline-item"><a href="/sub/Encourage.html">支持知性</a></li>
-						<li class="list-inline-item"><a href="/About.html">关于知性</a></li>
+						<li class="list-inline-item"><a href="/general/copyright">版权许可</a></li>
+						<li class="list-inline-item"><a href="/general/encourage">支持知性</a></li>
+						<li class="list-inline-item"><a href="/general/about">关于知性</a></li>
 					</ul>
 					<p><img loading="lazy" src="/favicon.ico" height="26" alt="知性标志" aria-hidden="true">&nbsp;知性&nbsp;KnowSex</p>
 									</div>
@@ -277,6 +327,7 @@
     }
 </script>
 			<script src="/script/script.js"></script>
+			<script src="/script/domain-check.js"></script>
 			<!-- <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/Han/3.3.0/han.min.js" type="application/javascript"></script> -->
 			<script>
 		//Han.init();
