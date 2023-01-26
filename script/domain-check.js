@@ -8,5 +8,5 @@ domains.forEach(function(domain) {
     }
 });
 if (!domainCheckValid) {
-    document.getElementById("domain-notice").innerHTML = "ℹ️ 您正在访问非官方提供的镜像网站。";
+    document.getElementById("domain-notice").innerHTML = `<p class="bg-light tip-bar">ℹ️ 您正在访问非官方提供的镜像网站。</p>`;
 }
